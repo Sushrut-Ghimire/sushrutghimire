@@ -1,0 +1,92 @@
+.container{
+    width: 100%;
+    height: 600px;
+}
+
+video{
+    width: 100%;
+    height: 600px;
+}
+
+.overview{
+    width: 100%;
+    height:100px;
+    line-height: 100px;
+    position: relative;
+    background-image: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255));
+}
+
+.overview p{
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    align-self: center;
+    padding-left: 300px;
+}
+
+.subject{
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding: 0px 130px;
+    position: relative;
+    transform: translateX(-1000px);
+    opacity: 0;
+    transition: all 0.75s ease;
+}
+
+.subject.active{
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding: 0px 130px;
+    position: relative;
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+
+
+.sub-subject{
+    position: relative;
+    overflow: hidden;
+}
+
+.sub-subject img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: linear-gradient(rgb(65, 58, 58), rgb(65, 55, 55));
+    transition: all 1.5s ease;
+}
+
+.sub-subject img:hover{
+    transform: scale(120%);
+    transition: all 1.5s ease;
+}
+
+.sub-subject p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-40%, -40%);
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    text-transform: none;
+}
+
+.sub-subject p:hover{
+    color: aqua;
+}
+
+
+.sub-subject:nth-child(3){
+    grid-column: span 2;
+    margin-bottom: 10px;
+    height: 500px;
+}
+
